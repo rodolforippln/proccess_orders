@@ -1,0 +1,70 @@
+{
+	"OriginPointCode": "VIX",
+	"OriginPartnerPointCode": null,
+	"OriginPostalCode": null,
+	"ToCollect": false,
+	"DestinationPointCode": null,
+	"DestinationPostalCode": "shippingData.logisticsInfo.selectedAddresses.postalCode",
+	"ToDelivery": true,
+	"ServiceCode": "CHEGOL - shippingData.logisticsInfo.selectedSla", 
+	"Insurance": {
+		"Type": 2,
+		"Company": null,
+		"PolicyNumber": null
+	},
+	"DeclaredValue": 0.0,				
+	"previousDocuments": null,
+	"Sender": {
+		"Document": "744.547.670-92",
+		"StateRegistration": "Isento",
+		"Name": "Fulano",
+		"Payer": true,
+		"Telephone": {
+			"CountryCode": "55",
+			"AreaCityCode": 27,
+			"PhoneNumber": "999999999"
+		},
+		"Address": {
+			"Street": "Rua Crisópolis",
+			"Complement": null,
+			"Number": "123",
+			"PostalCode": "29112-111",
+			"Neighborhood": "Jardim Marilândia",
+			"City": "Vila Velha",
+			"State": "ES",
+			"Country": "Brasil"
+		}
+	},
+	"Receiver": {
+		"Document": "clientProfileData.document",
+		"StateRegistration": "Isento",
+		"Name": "clientProfileData.firstName + lastName",
+		"Payer": false,
+		"Telephone": {
+			"CountryCode": "clientProfileData.phone",
+			"AreaCityCode": "clientProfileData.phone",
+			"PhoneNumber": "clientProfileData.phone",
+		},
+		"Address": {
+			"Street": "shippingData.selectedAddresses.street",
+			"Complement": "shippingData.selectedAddresses.complement",
+			"Number": "shippingData.selectedAddresses.number",
+			"PostalCode": "shippingData.selectedAddresses.postalCode",
+			"neighborhood": "shippingData.selectedAddresses.street",
+			"City": "shippingData.selectedAddresses.city",
+			"State": "shippingData.selectedAddresses.state",
+			"Country": "shippingData.selectedAddresses.country"
+		}
+	},
+	"Volumes": [
+		{
+			"Pieces": 1,
+			"Weight": "items.additionalInfo.dimension.weight",
+			"Lenght": "items.additionalInfo.dimension.length",
+			"Width": "items.additionalInfo.dimension.width",
+			"Height": "items.additionalInfo.dimension.height",
+		}
+	],
+	"generateDocumentNumber": true,
+	"paymentMethod": 1
+}	
